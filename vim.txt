@@ -1,0 +1,43 @@
+
+#1. Van vim?
+ez adja vissza hova lett telepitve a vim
+----
+command -v vim
+
+2. Telepites
+linux alatt: 
+a. ellenorzom a distribuciot , ez a rackforesten nem mukodik valamirt???
+----
+cat /etc/os-release
+
+b. ha debian van akkor frissitem a package managert
+----
+sudo apt update
+sudo apt install vim-nox
+
+c. ha nem megy az apt
+----
+sudo dnf install vim-enhanced
+
+3. Normal (Esc), Insert (i), Command (:)
+
+5. Last  Undo: Normal modban (u)
+
+6. Jump to end of Line: Normal mode ($) - {option+4}
+
+**********
+
+7. Jump end of line + Insert mode: {Shift+a}
+
+8. A kurzor alatti karakter torlese Normal mode: (x)
+
+9. Egesz sor torlese Normal mode : DD
+
+10. Mozgas a szovegben Normal mode: (h,j,k,l)
+
+11. Ket fajl osszevonasa: (:r filename)
+
+12. Uj faljba mentes: (:w filename)
+
+13. Linux command: (:! ls)
+

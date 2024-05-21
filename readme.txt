@@ -1,0 +1,2 @@
+proba iras ekezetek
+nelkul
