@@ -1,5 +1,5 @@
 
-#1. Van vim?
+1. Van vim?
 ez adja vissza hova lett telepitve a vim
 ----
 command -v vim
@@ -19,7 +19,7 @@ c. ha nem megy az apt
 ----
 sudo dnf install vim-enhanced
 
-3. Normal (Esc), Insert (i), Command (:)
+3. Normal (Esc), Insert (i), Visual (v), Command (:)
 
 5. Last  Undo: Normal modban (u)
 
@@ -35,9 +35,51 @@ sudo dnf install vim-enhanced
 
 10. Mozgas a szovegben Normal mode: (h,j,k,l)
 
-11. Ket fajl osszevonasa: (:r filename)
+11. Ket fajl osszevonasa / beolvasasa ebbe a bufferbe: (:r filename)
 
 12. Uj faljba mentes: (:w filename)
 
 13. Linux command: (:! ls)
+
+----
+
+15. Editalasa egy fajlnak egy uj bufferbe: (:e filename)
+
+16. Uj buffer inditasa uresen: (:enew)
+
+17. Elozo, kovetkezo  buffer: (:bp :bn)
+
+**********
+
+18. Visual mode (v)
+
+19. Kijeloles masolasra es masolas Visual mode: (y) - yanked
+
+20. Sorok sorba rendezese karakterek szerint: (v),kijelolese a soroknak,
+:sort ui
+
+21. Kicserelese egy szovegnek: :%s/kicserelndo/mire/g
+
+22. Ugras elejere, vegere: Normal mode: GG, Shift+G
+
+23. Buffer bezarasa: (:bd)
+
+24. Split, valtas, kilepes: (:split masik_file; vagy :sp masik_file), (Control WW), (:q)
+
+25. Vertical Split: (:vsplit masik_file; vagy :vs masik_file)
+
+26. Sorszamozas: (:set number, :set nonumber)
+
+27. Melyik konyvtarban vagyok:
+----
+pwd
+
+28. Vim config file letrehozasa: vim .vimrc (home konyvtarba), set number
+
+29. Sor torlese es bemasolasa Normal mod: DD utan P 
+
+30. Uj buffer atlepes nelkul: (:badd file_name)
+
+31 Vim megnyitasa azonnal split-tel: vim -o file_name1 file_name2 ha oszlopokat akarok akkor nagy O
+
 
